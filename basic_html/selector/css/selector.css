@@ -1,0 +1,48 @@
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+section {
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 30px;
+}
+a:link {
+  color: violet;
+
+}
+a:visited {
+  color: red;
+}
+a:hover {
+  color: yellow;
+}
+.group-list li:first-child{
+  color: blue;
+}
+.group-list li:first-child::before{
+  content: "← first";
+  color: darkgreen;
+  font-size: 11px;
+}
+.group-list li:last-child::after{
+  content: "←last";
+  font-size: 11px;
+  color: yellowgreen;
+}
+.group-list li:nth-child(2) {
+  background-color: lightpink;
+  padding-left: 10px;
+}
+input {
+  border: 1px solid red;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 14px;
+  outline: none;
+}
+input:focus {
+  border-color: blueviolet;
+  box-shadow: 0 0 0 3px lightblue;
+}
