@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      display: flex;
+      justify-content: center;
+    }
+    .container{
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      border-bottom: 1px solid gray;
+    }
+    footer{
+      border-top: 1px solid gray;
+    }
+    nav {
+      border-right: 1px solid gray;
+    }
+    aside {
+      border-left: 1px solid gray;
+    }
+    nav,aside {
+      flex-basis: 150px;
+      flex-shrink: 0;
+    }
+    .content {
+      display: flex;
+    }
+    main {
+      text-align: justify;
+      padding: 10px;
+      column-count: 4;
+      column-rule-color: red;
+      column-width: 200px;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Holy Grail Layout</h1>
+    </header>
+    <section class="content">
+      <nav>
+        <ul>
+          <li>main</li>
+          <li>about</li>
+          <li>help</li>
+        </ul>
+      </nav>
+      <main>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam placeat facilis, obcaecati ratione eum aspernatur quo, neque amet corrupti porro sint inventore voluptate. Animi dolorem nam vitae totam aliquid blanditiis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia debitis ipsum iure porro, architecto voluptates ducimus molestiae delectus commodi nihil laboriosam quisquam nisi modi totam! Voluptate voluptatibus labore doloremque optio.
+        Eum, nostrum harum error corporis numquam ipsa sequi nihil magnam neque nemo tempore. Fugiat, corrupti. Natus assumenda expedita quibusdam saepe nobis accusamus ab, temporibus soluta voluptatibus nostrum, porro, id consequatur.
+        Ratione aspernatur, quisquam veritatis architecto, est aut quo officiis modi voluptates repellendus reiciendis eveniet optio libero ut earum. Numquam doloribus aliquam necessitatibus labore voluptatibus voluptatum mollitia atque sit qui minus!</p>
+      </main>
+      <aside>
+        AD(광고)
+      </aside>
+    </section>
+    <footer>
+      <a href="www.naver.com">홈페이지</a>
+    </footer>
+  </div>
+</body>
+</html>
